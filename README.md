@@ -3,14 +3,15 @@
 This image is bases on `alpine` image, so it's only 192MB with Java JRE and DynamoDB installed.
 
 You can pull this image from  docker hub:
-
+```
   $ git pull onjin/dynamodb-alpine
-
+```
 
 Or build your own from repository:
 
+```
   $ docker build -t dynamodb-alpine .
-
+```
 
 # What is Amazon DynamoDB
 
