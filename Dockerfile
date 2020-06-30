@@ -3,7 +3,7 @@ FROM alpine:3.3
 
 ENV DDB_VERSION latest
 
-RUN apk update && apk add openjdk7 \
+RUN apk update && apk add openssl openjdk8 \
 	&& wget http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dynamodb_local_${DDB_VERSION}.tar.gz -O /tmp/dynamo.tar.gz \
 	&& mkdir -p /opt/dynamodb \
 	&& tar -xzvf /tmp/dynamo.tar.gz -C /opt/dynamodb \
